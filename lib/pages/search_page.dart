@@ -3,6 +3,23 @@ import 'package:flutter_trip/dao/search_dao.dart';
 import 'package:flutter_trip/model/search_model.dart';
 import 'package:flutter_trip/widget/search_bar.dart';
 
+import '../widget/webview.dart';
+
+const TYPES = [
+  'channelgroup',
+  'gs',
+  'plane',
+  'train',
+  'cruise',
+  'district',
+  'food',
+  'hotel',
+  'huodong',
+  'shop',
+  'sight',
+  'ticket',
+  'travelgroup'
+];
 const SEARCH_URL = 'https://m.ctrip.com/restapi/h5api/searchapp/search?source=mobileweb&action=autocomplete&contentType=json&keyword=';
 
 class SearchPage extends StatefulWidget {
@@ -73,12 +90,137 @@ class _SearchPageState extends State<SearchPage> {
     );
   }
 
+  _typeImage(String type) {
+    if (type == null) {
+      return "images/type_travelgroup.png";
+    }
+
+    String path = 'travelgroup';
+    for(final val in TYPES) {
+      if (type.contains(val)) {
+        path = val;
+        break;
+      }
+    }
+    return 'images/type_$path.png';
+  }
+
+  _keywordTextSpans(String word, String keyword) {
+    List<TextSpan> spans = [];
+    if (word == null || word.length == 0) {
+      return spans;
+    }
+
+    List<String> arr = word.split(keyword);
+    TextStyle normalTextStyle = TextStyle(
+      fontSize: 16,
+      color: Colors.black87,
+    );
+    TextStyle keywordTextStyle = TextStyle(
+      fontSize: 16,
+      color: Colors.orange,
+    );
+
+    for(int i=0;i<arr.length;i++) {
+      if ((i+1)%2 == 0) {
+        spans.add(TextSpan(text: keyword, style: keywordTextStyle));
+      }
+      String val = arr[i];
+      if (val != null && val.length > 0) {
+        spans.add(TextSpan(text: val, style: normalTextStyle));
+      }
+    }
+    return spans;
+  }
+
+  _title(SearchItem item) {
+    if (item == null) {
+      return null;
+    }
+    List<TextSpan> spans = [];
+    spans.addAll(_keywordTextSpans(item.word, searchModel.keyword));
+    spans.add(TextSpan(
+      text: ' ' + (item.districtname??'') + ' ' + (item.zonename??''),
+      style: TextStyle(
+        fontSize: 16,
+        color: Colors.grey
+      ),
+    ));
+
+    return new RichText(
+      text: TextSpan(
+        children: spans
+      )
+    );
+  }
+
+  _subTitle(SearchItem item) {
+    return new RichText(
+      text: TextSpan(
+        children: <TextSpan>[
+          TextSpan(
+            text: item.price??'',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.orange
+            )
+          ),
+          TextSpan(
+            text: ' ' + (item.star??''),
+            style: TextStyle(
+                fontSize: 12,
+                color: Colors.grey
+            )
+          ),
+        ]
+      )
+    );
+  }
+
   _item(int position) {
     if (searchModel == null || searchModel.data == null) {
       return null;
     }
     SearchItem item = searchModel.data[position];
-    return Text(item.word);
+    return new GestureDetector(
+      onTap: () {
+        Navigator.push(context, new MaterialPageRoute(builder: (context) => new Webview(
+          url: item.url,
+          title: '详情',
+        )));
+      },
+      child: new Container(
+        padding: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          border: Border(bottom: BorderSide(width: 0.3, color: Colors.grey))
+        ),
+        child: new Row(
+          children: <Widget>[
+            new Container(
+              margin: EdgeInsets.all(1),
+              child: new Image(
+                width: 26,
+                height: 26,
+                image: AssetImage(_typeImage(item.type))
+              ),
+            ),
+            new Column(
+              children: <Widget>[
+                new Container(
+                  width: 300,
+                  child: _title(item),
+                ),
+                new Container(
+                  width: 300,
+                  margin: EdgeInsets.only(top: 5),
+                  child: _subTitle(item),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 
   @override
