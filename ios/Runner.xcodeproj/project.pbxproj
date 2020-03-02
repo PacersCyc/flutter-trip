@@ -29,6 +29,8 @@
 		099F03FF240CAE370001B12A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 099F03FD240CAE360001B12A /* .gitignore */; };
 		099F0402240CAEF40001B12A /* AsrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F0401240CAEF40001B12A /* AsrManager.m */; };
 		099F0409240CC23E0001B12A /* AsrPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F0408240CC23E0001B12A /* AsrPlugin.m */; };
+		09F9C41D240CD74300D25754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F9C41C240CD74300D25754 /* AppDelegate.m */; };
+		09F9C420240CD76400D25754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F9C41F240CD76400D25754 /* main.m */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
@@ -86,6 +88,9 @@
 		099F0406240CB4D60001B12A /* BDSASRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSASRDefines.h; sourceTree = "<group>"; };
 		099F0407240CC23E0001B12A /* AsrPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsrPlugin.h; sourceTree = "<group>"; };
 		099F0408240CC23E0001B12A /* AsrPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsrPlugin.m; sourceTree = "<group>"; };
+		09F9C41C240CD74300D25754 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09F9C41E240CD75400D25754 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09F9C41F240CD76400D25754 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		2962E3B479E1B29E06082674 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +256,9 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				09F9C41F240CD76400D25754 /* main.m */,
+				09F9C41E240CD75400D25754 /* AppDelegate.h */,
+				09F9C41C240CD74300D25754 /* AppDelegate.m */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -429,6 +437,8 @@
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 				099F0409240CC23E0001B12A /* AsrPlugin.m in Sources */,
+				09F9C420240CD76400D25754 /* main.m in Sources */,
+				09F9C41D240CD74300D25754 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
