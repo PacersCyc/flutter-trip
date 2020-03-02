@@ -1,20 +1,8 @@
 package com.example.plugin.asr;
 
-//import android.content.Context;
-//
-//import com.baidu.speech.EventListener;
-//import com.baidu.speech.EventManager;
-//import com.baidu.speech.EventManagerFactory;
-//import com.baidu.speech.asr.SpeechConstant;
-//
-//import org.json.JSONObject;
-//
-//import java.util.Map;
-
 import android.content.Context;
 import android.util.Log;
 
-import com.baidu.speech.EventListener;
 import com.baidu.speech.EventManager;
 import com.baidu.speech.EventManagerFactory;
 import com.baidu.speech.asr.SpeechConstant;

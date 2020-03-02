@@ -84,7 +84,7 @@ public class AsrPlugin implements MethodChannel.MethodCallHandler {
     @Nullable
     private AsrManager getAsrManaget() {
         if (asrManager == null) {
-            if (activity != null && activity.isFinishing()) {
+            if (activity != null && !activity.isFinishing()) {
                 asrManager = new AsrManager(activity, onAsrListener);
             }
         }
@@ -119,10 +119,10 @@ public class AsrPlugin implements MethodChannel.MethodCallHandler {
 
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        // 此处为android 6.0以上动态授权的回调，用户自行实现。
-    }
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+//        // 此处为android 6.0以上动态授权的回调，用户自行实现。
+//    }
 
 
     private OnAsrListener onAsrListener = new OnAsrListener() {
