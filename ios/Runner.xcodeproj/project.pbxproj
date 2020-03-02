@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		099F03C2240BCDA50001B12A /* libBaiduSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F03C0240BCDA50001B12A /* libBaiduSpeechSDK.a */; };
-		099F03C5240BCE000001B12A /* BDSClientResources in Resources */ = {isa = PBXBuildFile; fileRef = 099F03C4240BCE000001B12A /* BDSClientResources */; };
-		099F03CE240BCE2F0001B12A /* bds_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03C7240BCE2F0001B12A /* bds_license.dat */; };
-		099F03CF240BCE2F0001B12A /* bds_easr_basic_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03C8240BCE2F0001B12A /* bds_easr_basic_model.dat */; };
-		099F03D0240BCE2F0001B12A /* bds_easr_mfe_cmvn.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03C9240BCE2F0001B12A /* bds_easr_mfe_cmvn.dat */; };
-		099F03D1240BCE2F0001B12A /* bds_easr_mfe_dnn.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03CA240BCE2F0001B12A /* bds_easr_mfe_dnn.dat */; };
-		099F03D2240BCE2F0001B12A /* bds_easr_gramm.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03CB240BCE2F0001B12A /* bds_easr_gramm.dat */; };
-		099F03D3240BCE2F0001B12A /* bds_easr_wakeup_words.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03CC240BCE2F0001B12A /* bds_easr_wakeup_words.dat */; };
-		099F03D4240BCE2F0001B12A /* bds_easr_dnn_wakeup_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03CD240BCE2F0001B12A /* bds_easr_dnn_wakeup_model.dat */; };
 		099F03D6240BCE790001B12A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F03D5240BCE790001B12A /* libc++.tbd */; };
 		099F03D8240BCE860001B12A /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F03D7240BCE860001B12A /* libz.1.2.5.tbd */; };
 		099F03DA240BCE9A0001B12A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F03D9240BCE9A0001B12A /* libsqlite3.0.tbd */; };
@@ -26,6 +17,18 @@
 		099F03E4240BCEDE0001B12A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F03E3240BCEDE0001B12A /* CoreTelephony.framework */; };
 		099F03E6240BCEEC0001B12A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F03E5240BCEEC0001B12A /* SystemConfiguration.framework */; };
 		099F03E8240BCEF80001B12A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F03E7240BCEF70001B12A /* GLKit.framework */; };
+		099F03F2240CAE0F0001B12A /* bds_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03EB240CAE0F0001B12A /* bds_license.dat */; };
+		099F03F3240CAE0F0001B12A /* bds_easr_basic_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03EC240CAE0F0001B12A /* bds_easr_basic_model.dat */; };
+		099F03F4240CAE0F0001B12A /* bds_easr_mfe_cmvn.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03ED240CAE0F0001B12A /* bds_easr_mfe_cmvn.dat */; };
+		099F03F5240CAE0F0001B12A /* bds_easr_mfe_dnn.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03EE240CAE0F0001B12A /* bds_easr_mfe_dnn.dat */; };
+		099F03F6240CAE0F0001B12A /* bds_easr_gramm.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03EF240CAE0F0001B12A /* bds_easr_gramm.dat */; };
+		099F03F7240CAE0F0001B12A /* bds_easr_wakeup_words.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03F0240CAE0F0001B12A /* bds_easr_wakeup_words.dat */; };
+		099F03F8240CAE0F0001B12A /* bds_easr_dnn_wakeup_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 099F03F1240CAE0F0001B12A /* bds_easr_dnn_wakeup_model.dat */; };
+		099F03FA240CAE210001B12A /* BDSClientResources in Resources */ = {isa = PBXBuildFile; fileRef = 099F03F9240CAE210001B12A /* BDSClientResources */; };
+		099F03FE240CAE370001B12A /* libBaiduSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F03FC240CAE360001B12A /* libBaiduSpeechSDK.a */; };
+		099F03FF240CAE370001B12A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 099F03FD240CAE360001B12A /* .gitignore */; };
+		099F0402240CAEF40001B12A /* AsrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F0401240CAEF40001B12A /* AsrManager.m */; };
+		099F0409240CC23E0001B12A /* AsrPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F0408240CC23E0001B12A /* AsrPlugin.m */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
@@ -56,15 +59,6 @@
 
 /* Begin PBXFileReference section */
 		079D8B31656A97B374567D96 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
-		099F03C0240BCDA50001B12A /* libBaiduSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduSpeechSDK.a; sourceTree = "<group>"; };
-		099F03C4240BCE000001B12A /* BDSClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BDSClientResources; sourceTree = "<group>"; };
-		099F03C7240BCE2F0001B12A /* bds_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_license.dat; sourceTree = "<group>"; };
-		099F03C8240BCE2F0001B12A /* bds_easr_basic_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_basic_model.dat; sourceTree = "<group>"; };
-		099F03C9240BCE2F0001B12A /* bds_easr_mfe_cmvn.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_easr_mfe_cmvn.dat; sourceTree = "<group>"; };
-		099F03CA240BCE2F0001B12A /* bds_easr_mfe_dnn.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_mfe_dnn.dat; sourceTree = "<group>"; };
-		099F03CB240BCE2F0001B12A /* bds_easr_gramm.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_easr_gramm.dat; sourceTree = "<group>"; };
-		099F03CC240BCE2F0001B12A /* bds_easr_wakeup_words.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_wakeup_words.dat; sourceTree = "<group>"; };
-		099F03CD240BCE2F0001B12A /* bds_easr_dnn_wakeup_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_dnn_wakeup_model.dat; sourceTree = "<group>"; };
 		099F03D5240BCE790001B12A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		099F03D7240BCE860001B12A /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		099F03D9240BCE9A0001B12A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -75,6 +69,23 @@
 		099F03E3240BCEDE0001B12A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		099F03E5240BCEEC0001B12A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		099F03E7240BCEF70001B12A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		099F03EB240CAE0F0001B12A /* bds_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_license.dat; sourceTree = "<group>"; };
+		099F03EC240CAE0F0001B12A /* bds_easr_basic_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_basic_model.dat; sourceTree = "<group>"; };
+		099F03ED240CAE0F0001B12A /* bds_easr_mfe_cmvn.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_easr_mfe_cmvn.dat; sourceTree = "<group>"; };
+		099F03EE240CAE0F0001B12A /* bds_easr_mfe_dnn.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_mfe_dnn.dat; sourceTree = "<group>"; };
+		099F03EF240CAE0F0001B12A /* bds_easr_gramm.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_easr_gramm.dat; sourceTree = "<group>"; };
+		099F03F0240CAE0F0001B12A /* bds_easr_wakeup_words.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_wakeup_words.dat; sourceTree = "<group>"; };
+		099F03F1240CAE0F0001B12A /* bds_easr_dnn_wakeup_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_dnn_wakeup_model.dat; sourceTree = "<group>"; };
+		099F03F9240CAE210001B12A /* BDSClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BDSClientResources; sourceTree = "<group>"; };
+		099F03FC240CAE360001B12A /* libBaiduSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduSpeechSDK.a; sourceTree = "<group>"; };
+		099F03FD240CAE360001B12A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		099F0400240CAEF40001B12A /* AsrManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsrManager.h; sourceTree = "<group>"; };
+		099F0401240CAEF40001B12A /* AsrManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsrManager.m; sourceTree = "<group>"; };
+		099F0404240CB4D60001B12A /* BDSASRParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSASRParameters.h; sourceTree = "<group>"; };
+		099F0405240CB4D60001B12A /* BDSEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSEventManager.h; sourceTree = "<group>"; };
+		099F0406240CB4D60001B12A /* BDSASRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSASRDefines.h; sourceTree = "<group>"; };
+		099F0407240CC23E0001B12A /* AsrPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsrPlugin.h; sourceTree = "<group>"; };
+		099F0408240CC23E0001B12A /* AsrPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsrPlugin.m; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		2962E3B479E1B29E06082674 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,9 +121,9 @@
 				099F03DA240BCE9A0001B12A /* libsqlite3.0.tbd in Frameworks */,
 				099F03D8240BCE860001B12A /* libz.1.2.5.tbd in Frameworks */,
 				099F03D6240BCE790001B12A /* libc++.tbd in Frameworks */,
-				099F03C2240BCDA50001B12A /* libBaiduSpeechSDK.a in Frameworks */,
 				9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */,
 				3B80C3941E831B6300D905FE /* App.framework in Frameworks */,
+				099F03FE240CAE370001B12A /* libBaiduSpeechSDK.a in Frameworks */,
 				C4FCAD28200D2311237DCEED /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,33 +152,57 @@
 		099F03BE240BCD270001B12A /* plugin */ = {
 			isa = PBXGroup;
 			children = (
-				099F03C6240BCE2F0001B12A /* BDSClientEASRResources */,
-				099F03C4240BCE000001B12A /* BDSClientResources */,
-				099F03BF240BCDA50001B12A /* BDSClientLib */,
+				099F03E9240CAD910001B12A /* ASRPlugin */,
 			);
 			path = plugin;
 			sourceTree = "<group>";
 		};
-		099F03BF240BCDA50001B12A /* BDSClientLib */ = {
+		099F03E9240CAD910001B12A /* ASRPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				099F03C0240BCDA50001B12A /* libBaiduSpeechSDK.a */,
+				099F0400240CAEF40001B12A /* AsrManager.h */,
+				099F0401240CAEF40001B12A /* AsrManager.m */,
+				099F0403240CB4D60001B12A /* Headers */,
+				099F03FB240CAE360001B12A /* BDSClientLib */,
+				099F03F9240CAE210001B12A /* BDSClientResources */,
+				099F03EA240CAE0F0001B12A /* BDSClientEASRResources */,
+				099F0407240CC23E0001B12A /* AsrPlugin.h */,
+				099F0408240CC23E0001B12A /* AsrPlugin.m */,
+			);
+			path = ASRPlugin;
+			sourceTree = "<group>";
+		};
+		099F03EA240CAE0F0001B12A /* BDSClientEASRResources */ = {
+			isa = PBXGroup;
+			children = (
+				099F03EB240CAE0F0001B12A /* bds_license.dat */,
+				099F03EC240CAE0F0001B12A /* bds_easr_basic_model.dat */,
+				099F03ED240CAE0F0001B12A /* bds_easr_mfe_cmvn.dat */,
+				099F03EE240CAE0F0001B12A /* bds_easr_mfe_dnn.dat */,
+				099F03EF240CAE0F0001B12A /* bds_easr_gramm.dat */,
+				099F03F0240CAE0F0001B12A /* bds_easr_wakeup_words.dat */,
+				099F03F1240CAE0F0001B12A /* bds_easr_dnn_wakeup_model.dat */,
+			);
+			path = BDSClientEASRResources;
+			sourceTree = "<group>";
+		};
+		099F03FB240CAE360001B12A /* BDSClientLib */ = {
+			isa = PBXGroup;
+			children = (
+				099F03FC240CAE360001B12A /* libBaiduSpeechSDK.a */,
+				099F03FD240CAE360001B12A /* .gitignore */,
 			);
 			path = BDSClientLib;
 			sourceTree = "<group>";
 		};
-		099F03C6240BCE2F0001B12A /* BDSClientEASRResources */ = {
+		099F0403240CB4D60001B12A /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				099F03C7240BCE2F0001B12A /* bds_license.dat */,
-				099F03C8240BCE2F0001B12A /* bds_easr_basic_model.dat */,
-				099F03C9240BCE2F0001B12A /* bds_easr_mfe_cmvn.dat */,
-				099F03CA240BCE2F0001B12A /* bds_easr_mfe_dnn.dat */,
-				099F03CB240BCE2F0001B12A /* bds_easr_gramm.dat */,
-				099F03CC240BCE2F0001B12A /* bds_easr_wakeup_words.dat */,
-				099F03CD240BCE2F0001B12A /* bds_easr_dnn_wakeup_model.dat */,
+				099F0404240CB4D60001B12A /* BDSASRParameters.h */,
+				099F0405240CB4D60001B12A /* BDSEventManager.h */,
+				099F0406240CB4D60001B12A /* BDSASRDefines.h */,
 			);
-			path = BDSClientEASRResources;
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		0D8CA2E4FA65A68A2C7566C1 /* Pods */ = {
@@ -299,17 +334,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				099F03C5240BCE000001B12A /* BDSClientResources in Resources */,
-				099F03D0240BCE2F0001B12A /* bds_easr_mfe_cmvn.dat in Resources */,
-				099F03D4240BCE2F0001B12A /* bds_easr_dnn_wakeup_model.dat in Resources */,
+				099F03F4240CAE0F0001B12A /* bds_easr_mfe_cmvn.dat in Resources */,
+				099F03F8240CAE0F0001B12A /* bds_easr_dnn_wakeup_model.dat in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
-				099F03D2240BCE2F0001B12A /* bds_easr_gramm.dat in Resources */,
-				099F03D1240BCE2F0001B12A /* bds_easr_mfe_dnn.dat in Resources */,
-				099F03CF240BCE2F0001B12A /* bds_easr_basic_model.dat in Resources */,
+				099F03F6240CAE0F0001B12A /* bds_easr_gramm.dat in Resources */,
+				099F03F5240CAE0F0001B12A /* bds_easr_mfe_dnn.dat in Resources */,
+				099F03FA240CAE210001B12A /* BDSClientResources in Resources */,
+				099F03F3240CAE0F0001B12A /* bds_easr_basic_model.dat in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
-				099F03D3240BCE2F0001B12A /* bds_easr_wakeup_words.dat in Resources */,
-				099F03CE240BCE2F0001B12A /* bds_license.dat in Resources */,
+				099F03F7240CAE0F0001B12A /* bds_easr_wakeup_words.dat in Resources */,
+				099F03F2240CAE0F0001B12A /* bds_license.dat in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				099F03FF240CAE370001B12A /* .gitignore in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,8 +425,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099F0402240CAEF40001B12A /* AsrManager.m in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				099F0409240CC23E0001B12A /* AsrPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +523,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 					"$(PROJECT_DIR)/plugin/BDSClientLib",
+					"$(PROJECT_DIR)/plugin/ASRPlugin/BDSClientLib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -620,6 +659,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 					"$(PROJECT_DIR)/plugin/BDSClientLib",
+					"$(PROJECT_DIR)/plugin/ASRPlugin/BDSClientLib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -648,6 +688,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 					"$(PROJECT_DIR)/plugin/BDSClientLib",
+					"$(PROJECT_DIR)/plugin/ASRPlugin/BDSClientLib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
