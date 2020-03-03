@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_trip/navigator/tab_navigator.dart';
+import 'package:flutter_splash_screen/flutter_splash_screen.dart';
 
 void main() => runApp(MyApp());
 

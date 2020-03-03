@@ -14,6 +14,7 @@ import 'package:flutter_trip/widget/sales_box.dart';
 import 'package:flutter_trip/widget/search_bar.dart';
 import 'package:flutter_trip/widget/sub_nav.dart';
 import 'package:flutter_trip/widget/webview.dart';
+import 'package:flutter_splash_screen/flutter_splash_screen.dart';
 
 import '../widget/webview.dart';
 import 'search_page.dart';
@@ -44,6 +45,9 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     this._handleRefresh();
+    Future.delayed(Duration(milliseconds: 600), (){
+      FlutterSplashScreen.hide();
+    });
 //    this.loadData();
   }
 
