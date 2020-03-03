@@ -81,6 +81,12 @@ class _TravelTabPageState extends State<TravelTabPage> with AutomaticKeepAliveCl
   }
 
   @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return new Scaffold(
       body: new LoadingContainer(

@@ -7,6 +7,7 @@ import 'package:flutter_trip/model/grid_nav_model.dart';
 import 'package:flutter_trip/model/home_model.dart';
 import 'package:flutter_trip/model/sales_box_model.dart';
 import 'package:flutter_trip/pages/speak_page.dart';
+import 'package:flutter_trip/util/navigator_util.dart';
 import 'package:flutter_trip/widget/grid_nav.dart';
 import 'package:flutter_trip/widget/loading_container.dart';
 import 'package:flutter_trip/widget/local_nav.dart';
@@ -106,14 +107,12 @@ class _HomePageState extends State<HomePage> {
         itemBuilder: (BuildContext context, int index) {
           return new GestureDetector(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context){
-                CommonModel model = bannerList[index];
-                return new Webview(
-                  url: model.url,
-                  title: model.title,
-                  hideAppBar: model.hideAppBar,
-                );
-              }));
+              CommonModel model = bannerList[index];
+              NavigatorUtil.push(context, new Webview(
+                url: model.url,
+                title: model.title,
+                hideAppBar: model.hideAppBar,
+              ));
             },
             child: new Image.network(
               bannerList[index].icon,

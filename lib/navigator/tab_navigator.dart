@@ -34,46 +34,10 @@ class _TabNavigatorState extends State<TabNavigator> {
       ),
       bottomNavigationBar: new BottomNavigationBar(
         items: [
-          new BottomNavigationBarItem(
-              icon: new Icon(Icons.home, color: this._defaultColor,),
-              activeIcon: new Icon(Icons.home, color: this._activeColor),
-              title: new Text(
-                '首页',
-                style: new TextStyle(
-                    color: this._currentIndex != 0 ? this._defaultColor : this._activeColor
-                ),
-              )
-          ),
-          new BottomNavigationBarItem(
-              icon: new Icon(Icons.search, color: this._defaultColor,),
-              activeIcon: new Icon(Icons.search, color: this._activeColor),
-              title: new Text(
-                '搜索',
-                style: new TextStyle(
-                    color: this._currentIndex != 1 ? this._defaultColor : this._activeColor
-                ),
-              )
-          ),
-          new BottomNavigationBarItem(
-              icon: new Icon(Icons.camera_alt, color: this._defaultColor,),
-              activeIcon: new Icon(Icons.camera_alt, color: this._activeColor),
-              title: new Text(
-                '相机',
-                style: new TextStyle(
-                    color: this._currentIndex != 2 ? this._defaultColor : this._activeColor
-                ),
-              )
-          ),
-          new BottomNavigationBarItem(
-              icon: new Icon(Icons.account_circle, color: this._defaultColor,),
-              activeIcon: new Icon(Icons.account_circle, color: this._activeColor),
-              title: new Text(
-                '我的',
-                style: new TextStyle(
-                    color: this._currentIndex != 3 ? this._defaultColor : this._activeColor
-                ),
-              )
-          )
+          _bottomItem('首页', Icons.home, 0),
+          _bottomItem('搜索', Icons.search, 1),
+          _bottomItem('相机', Icons.camera_alt, 2),
+          _bottomItem('我的', Icons.account_circle, 3),
         ],
         currentIndex: this._currentIndex,
         onTap: (index) {
@@ -84,6 +48,17 @@ class _TabNavigatorState extends State<TabNavigator> {
         },
         type: BottomNavigationBarType.fixed,
       ),
+    );
+  }
+
+  _bottomItem(String title, IconData icon, int index) {
+    return new BottomNavigationBarItem(
+      icon: new Icon(icon, color: _defaultColor),
+      activeIcon: new Icon(icon, color: _activeColor),
+      title: Text(
+        title,
+        style: TextStyle(color: _currentIndex!=index?_defaultColor:_activeColor),
+      )
     );
   }
 
